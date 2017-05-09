@@ -36,6 +36,7 @@ class Input extends Component {
 
     return (
       <input
+          id="new-tag"
           ref="input"
           value={val}
           onChange={(e) => this.handleChange(onChange, e)}
@@ -43,8 +44,7 @@ class Input extends Component {
           className={classNames('input', {
               'input--borderless': borderless
           })}
-      >
-      </input>
+      />
     )
   }
 }

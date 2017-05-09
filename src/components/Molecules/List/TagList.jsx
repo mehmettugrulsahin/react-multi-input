@@ -30,9 +30,11 @@ class TagList extends Component {
 
   postTags(items) {
     const mock = new MockAdapter(axios);
-    mock.onPost('/tags', items).reply(200);
+    const tagsRoute = '/tags';
 
-    axios.post('/tags', items)
+    mock.onPost(tagsRoute, items).reply(200);
+
+    axios.post(tagsRoute, items)
       .then((response) => {
         console.log('response', response);
       })
@@ -87,6 +89,10 @@ class TagList extends Component {
       this.setState({
         items: newItems,
       });
+  }
+
+  componentDidMount() {
+    document.getElementById('new-tag').focus()
   }
 
   render() {
