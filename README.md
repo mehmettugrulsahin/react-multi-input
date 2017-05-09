@@ -189,7 +189,7 @@ as atoms, molecules, organisms and templates taking into account the complexity 
 
 ### Templates
 #### Templates > Input
-- `MultiInputCard` is a class component that accepts `intro`, `mails`, `orderState` and `telephones` props and renders
+- `MultiInputCard` is a class component that accepts `intro`, `mails` and `telephones` props and renders
   a `MultiInput` component.
   ```
   <MultiInputCard
