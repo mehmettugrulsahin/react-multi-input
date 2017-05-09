@@ -2,4 +2,39 @@
 
 .multi-input {
 
+  width: 24em;
+  border-style: solid;
+  margin-left: 10px;
+
+  &__container {
+    margin-left: 10px;
+  }
+
+  &__intro-title {
+    margin-bottom: 10px;
+  }
+
+  &__intro-description {
+    margin-bottom: 20px;
+  }
+
+  &__mails-title {
+    margin-bottom: 3px;
+  }
+
+  &__telephones {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  &__telephones-title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  &__telephones-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }

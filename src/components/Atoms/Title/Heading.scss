@@ -3,6 +3,7 @@
 .heading {
     font-family: $font-family-primary;
     margin: 0;
+    color: darken($color-grey, 20);
 
     &--h1 {
         font-size: $font-size-h1;

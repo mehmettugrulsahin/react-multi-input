@@ -1,5 +1,13 @@
 @import '../../../theming/config';
 
 .input {
+    width: 95%;
+    margin-top: 3px;
+    height: 22px;
+    font-family: $font-family-primary;
+    font-size: $font-size-medium;
 
+    &--borderless {
+          border: 0;
+    }
 }

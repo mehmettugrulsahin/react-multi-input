@@ -13,15 +13,29 @@ import Input from '../../Atoms/Text/Input';
 
 const MultiInput = ({ intro, mails, telephones }) => (
   <div className="multi-input">
-    <Heading size={'h3'} text={intro.title} />
-    <Info body={intro.description} />
+    <div className="multi-input__container">
+      <div className="multi-input__intro-title">
+        <Heading size={'h4'} text={intro.title} />
+      </div>
+      <div className="multi-input__intro-description">
+        <Info body={intro.description} />
+      </div>
 
-    <Label text={mails.title} />
-    <TagList items={mails.items} />
+      <div className="multi-input__mails-title">
+        <Label size={'small'} text={mails.title} />
+      </div>
+      <TagList items={mails.items} />
 
-    <Label text={telephones.title} />
-    <Input />
-    <Info body={telephones.description} />
+      <div className="multi-input__telephones">
+        <div className="multi-input__telephones-title">
+          <Label size={'small'} text={telephones.title} />
+        </div>
+        <div className="multi-input__telephones-input">
+          <Input />
+        </div>
+        <Info size={'small'} body={telephones.description} />
+      </div>
+    </div>
   </div>
 );
 
@@ -34,7 +48,7 @@ MultiInput.propTypes = {
       title: PropTypes.string,
       items: PropTypes.arrayOf(
         PropTypes.shape({
-          id: PropTypes.string,
+          id: PropTypes.number,
           text: PropTypes.string
         })
       )

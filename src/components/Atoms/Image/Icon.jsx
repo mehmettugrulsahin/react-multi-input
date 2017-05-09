@@ -14,9 +14,11 @@ const getPath = (name) => {
 }
 
 const Icon = ({ name, width, height }) => (
-  <svg width={width} height={height} viewBox="0 0 1024 1024">
-    <path d={getPath(name)}></path>
-  </svg>
+  <div className="icon">
+    <svg width={width} height={height} viewBox="0 0 1024 1024">
+      <path d={getPath(name)}></path>
+    </svg>
+  </div>
 );
 
 Icon.propTypes = {

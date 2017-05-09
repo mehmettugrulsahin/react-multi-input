@@ -5,9 +5,8 @@
     padding: 6px 2em;
     text-align: center;
     font-family: $font-family-primary;
-    color: $color-text-title;
+    color: lighten($color-text-title, 50);
     background-color: $color-fill-white;
-    font-size: $font-size-medium;
     white-space: nowrap;
     padding: 0;
 
@@ -15,5 +14,13 @@
         color: $color-white;
         background-color: $color-fill-label;
         font-family: $font-family-primary;
+    }
+
+    &--small {
+        font-size: $font-size-small;
+    }
+
+    &--medium {
+        font-size: $font-size-medium;
     }
 }

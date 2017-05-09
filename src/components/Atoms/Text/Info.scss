@@ -2,6 +2,13 @@
 
 .info {
     font-family: $font-family-primary;
-    color: $color-grey;
-    font-size: $font-size-medium;
+    color: lighten($color-grey, 10);
+
+    &--small {
+        font-size: $font-size-small;
+    }
+
+    &--medium {
+        font-size: $font-size-medium;
+    }
 }
